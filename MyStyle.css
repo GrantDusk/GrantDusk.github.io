@@ -1,0 +1,17 @@
+Head_Big	{
+	position: center;
+	font-family: 'Acme', sans-serif;
+	font-size: 40;
+	font-style: bold;
+	font-color: white;
+	z-index: 0;	
+}
+
+body {
+  padding-top: 3.5rem;
+}
+
+div.center	{
+	position: center; 
+	border: 5px solid black;
+}
