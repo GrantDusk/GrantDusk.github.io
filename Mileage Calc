@@ -1,0 +1,13 @@
+Car Mileage Calculator:
+
+fill = input("gallons to fill:")
+fill = (int(fill))
+distance = input("distance traveled (miles):")
+distance = (int(distance))
+
+def mileage_calc():
+	mileage=(distance/fill)
+	print("Miles/Gallon:", mileage)
+	
+	
+mileage_calc()
