@@ -1,0 +1,10 @@
+Input three numbers, print the largest:
+
+x = input('first number:')
+x = (int(x))
+y = input('second number:')
+y = (int(y))
+z = input('third number:')
+z = (int(z))
+
+print("Largest:", max(x,y,z))
