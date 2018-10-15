@@ -1,0 +1,14 @@
+Loan Payment Calculator
+
+pv = input("present value:")
+pv = (int(pv))
+r = input("rate per period:")
+r = (int(r))
+n = input("number of periods:")
+n = (int(n))
+
+def payment():
+	p = (r*pv)/(1-(1+r)**-n)
+	print("payment:", p)
+	
+payment()
