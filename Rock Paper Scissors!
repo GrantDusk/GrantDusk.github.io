@@ -9,7 +9,7 @@ tie = 0
 
 print("Rock, Paper, Scissors!")
 input('Press ENTER to continue...')
-i = (input("How Many Rounds:"))
+i = (input("Number of Rounds:"))
 i = int(i)
 	
 for x in range(i):
