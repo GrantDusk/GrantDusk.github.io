@@ -5,6 +5,7 @@ comp_pick = options[random.randint(0,2)]
 rounds = 0
 win = 0
 loss = 0
+tie = 0
 
 print("Rock, Paper, Scissors!")
 input('Press ENTER to continue...')
@@ -16,6 +17,7 @@ for x in range(i):
 	print ("Your Pick:" , pick, "Computer Pick:", comp_pick,)
 	if pick == comp_pick:
 		print ("Tie!")
+		tie = (tie+1)
 	elif pick == "Rock":
 		if comp_pick == "Paper":
 			print ("Winner is: Computer!")
@@ -42,6 +44,6 @@ for x in range(i):
 rounds = (rounds+1)
 print("---------------------------")
 print("Final Score!")
-print("Win:",win,"Loss:",loss) 
+print("Win:",win,"Loss:",loss,"Tie:",tie) 
 
 
