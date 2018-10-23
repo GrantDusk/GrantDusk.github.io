@@ -54,7 +54,6 @@ while True:
 		print()
 		for x in range (i):
 			print("Options: Red, White, Blue, Green")
-			print(comp_set)
 			print()
 			g1 = input("Guess the first color:")
 			g2 = input("Guess the second color:")
