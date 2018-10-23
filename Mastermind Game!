@@ -89,7 +89,7 @@ while True:
 					print("Code: ", comp_set)
 					print("========================================")
 	else:
-		print("Enter a Positive Value")
+		print("Enter a Value Greater Than 0")
 		continue
 		
 	if True:
