@@ -1,0 +1,107 @@
+import random
+# C is a match on color & position
+# B is a match on color only
+R = "Red"
+G = "Green"
+B = "Blue"
+W = "White"
+options = [R, G, B, W]
+n1 = options[random.randint(0,3)]
+n2 = options[random.randint(0,3)]
+n3 = options[random.randint(0,3)]
+n4 = options[random.randint(0,3)]
+comp_set = n1, n2, n3, n4
+count = 0
+
+def check1():	
+	if g1 == n1:
+		print("C, ")
+	elif(g1 in comp_set):
+		print("B, ")
+	else: 
+		print("~, ")
+
+def check2():	
+	if g2 == n2:
+		print("C, ")
+	elif(g2 in comp_set):
+		print("B, ")
+	else: 
+		print("~, ")		
+
+def check3():	
+	if g3 == n3:
+		print("C, ")
+	elif(g3 in comp_set):
+		print("B, ")
+	else: 
+		print("~, ")
+
+def check4():	
+	if g4 == n4:
+		print("C, ")
+	elif(g4 in comp_set):
+		print("B, ")
+	else: 
+		print("~, ")	
+
+while True:
+	print("Mastermind - The Game")
+	input('Press ENTER to continue...')
+	i = (input("How Many Rounds:"))
+	i = int(i)
+	if i > 0:
+		print()
+		for x in range (i):
+			print("Options: Red, White, Blue, Green")
+			print(comp_set)
+			print()
+			g1 = input("Guess the first color:")
+			g2 = input("Guess the second color:")
+			g3 = input("Guess the third color:")
+			g4 = input("Guess the fourth color:")
+			print()
+			user_pick = (g1, g2, g3, g4)
+			print("----------------------------------------")
+			print("User: ", user_pick)
+			print("----------------------------------------")
+			if user_pick == comp_set:
+				print()
+				print("================================================================================")
+				print("Congratulations! You guessed the right code: ", comp_set)
+				print("================================================================================")
+			else:
+				print("C = match on color & position") 
+				print("B = match on color only")
+				print("~ = no match")
+				print()
+				check1()
+				check2()
+				check3()
+				check4()
+				print("----------------------------------------")
+				count = (count+1)
+				if count == i:
+					print()
+					print()	
+					print("========================================")
+					print("You were beaten by the Mastermind!")
+					print("Code: ", comp_set)
+					print("========================================")
+	else:
+		print("Enter a Positive Value")
+		continue
+		
+	if True:
+		repeat = input("Play Again? (y/n):")
+		if repeat not in ('y', 'n'):
+			print()
+			print("Invalid input")
+		if repeat == 'y':
+			print()
+			print()
+			continue
+		else:
+			print()
+			print("Thanks for Playing!")
+			break
