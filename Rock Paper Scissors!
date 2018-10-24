@@ -5,15 +5,17 @@ comp_pick = options[random.randint(0,2)]
 rounds = 0
 win = 0
 loss = 0
+count = 0
 while True:	
 	print("Rock, Paper, Scissors!")
 	input('Press ENTER to continue...')
 	i = (input("How Many Rounds:"))
 	i = int(i)
+	count = 0
 	for x in range(i):
-		rounds = 1
-		print("Round: ", rounds)
-		pick = input("Your pick: ")
+		count = count+1
+		print("Round: ", count)
+		pick = input("Your Pick: ")
 		print()
 		print ("Your Pick:" , pick, " | ", "Computer Pick:", comp_pick,)
 		if pick == comp_pick:
@@ -77,4 +79,7 @@ while True:
 			print()
 			print("Thanks for Playing!")
 			break
+
+
+
 
