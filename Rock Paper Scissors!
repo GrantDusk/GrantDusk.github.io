@@ -5,45 +5,76 @@ comp_pick = options[random.randint(0,2)]
 rounds = 0
 win = 0
 loss = 0
-tie = 0
-
-print("Rock, Paper, Scissors!")
-input('Press ENTER to continue...')
-i = (input("Number of Rounds:"))
-i = int(i)
+while True:	
+	print("Rock, Paper, Scissors!")
+	input('Press ENTER to continue...')
+	i = (input("How Many Rounds:"))
+	i = int(i)
+	for x in range(i):
+		rounds = 1
+		print("Round: ", rounds)
+		pick = input("Your pick: ")
+		print()
+		print ("Your Pick:" , pick, " | ", "Computer Pick:", comp_pick,)
+		if pick == comp_pick:
+			print("----------------------------------------")
+			print ("Winner is: Tie!")
+			print("----------------------------------------")
+		elif pick == "Rock":
+			if comp_pick == "Paper":
+				print
+				print("----------------------------------------")
+				print ("Winner is: Computer!")
+				print("----------------------------------------")
+				loss = (loss+1)
+			else:
+				print("----------------------------------------")
+				print ("Winner is: Player!")
+				print("----------------------------------------")
+				win = (win+1)
+		elif pick == "Paper":
+			if comp_pick == "Scissors":
+				print("----------------------------------------")
+				print("Winner is: Computer!")
+				print("----------------------------------------")
+				loss = (loss+1)
+			else:
+				print("----------------------------------------")
+				print ("Winner is: Player!")
+				print("----------------------------------------")
+				win = (win+1)
+		elif pick == "Scissors":
+			if comp_pick == "Rock":
+				print("----------------------------------------")
+				print ("Winner is: Computer!")
+				print("----------------------------------------")
+				loss = (loss+1)
+			else:
+				print("----------------------------------------")
+				print ("Winner is: Player!")
+				print("----------------------------------------")
+				win = (win+1)
+		else:
+			print ("Invalid Guess!")
+	rounds = (rounds+1)
+	print()
+	print()
+	print()
+	print("========================================")
+	print("Final Score!")
+	print("Win:",win,"Loss:",loss) 
 	
-for x in range(i):
-	pick = input("Your pick:")
-	print ("Your Pick:" , pick, "Computer Pick:", comp_pick,)
-	if pick == comp_pick:
-		print ("Tie!")
-		tie = (tie+1)
-	elif pick == "Rock":
-		if comp_pick == "Paper":
-			print ("Winner is: Computer!")
-			loss = (loss+1)
+	if True:
+		repeat = input("Play Again? (y/n):")
+		if repeat not in ('y', 'n'):
+			print()
+			print("Invalid input")
+		if repeat == 'y':
+			print()
+			print()
+			continue
 		else:
-			print ("Winner is: Player!")
-			win = (win+1)
-	elif pick == "Paper":
-		if comp_pick == "Scissors":
-			print("Winner is: Computer!")
-			loss = (loss+1)
-		else:
-			print ("Winner is: Player!")
-			win = (win+1)
-	elif pick == "Scissors":
-		if comp_pick == "Rock":
-			print ("Winner is: Computer!")
-			loss = (loss+1)
-		else:
-			print ("Winner is: Player!")
-			win = (win+1)
-	else:
-		print ("Invalid Guess!")
-rounds = (rounds+1)
-print("---------------------------")
-print("Final Score!")
-print("Win:",win,"Loss:",loss,"Tie:",tie) 
-
+			print()
+			print("Thanks for Playing!")
+			break
 
