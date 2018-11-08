@@ -1,0 +1,27 @@
+Head_Big	{
+	position: center;
+	font-family: 'Acme', sans-serif;
+	font-size: 40;
+	font-style: bold;
+	font-color: white;
+	z-index: 0;	
+}
+
+body {
+  padding-top: 3.5rem;
+}
+
+
+div.jumbotron	{
+	background-image: url("https://wallpapercave.com/wp/rtMojAI.jpg");
+	background-size: fill;
+	
+}
+
+div.blue	{
+	width: 100%;
+	height: 100%;
+	background-image: url("http://stephenking.club/wp-content/uploads//2018/05/solid-blue-color-light-sky-blue-solid-color-background-miaminx-navy-blue-colored-solid-skater-dress.jpg");
+	padding: 0px 0px 0px 0px;
+	
+}
