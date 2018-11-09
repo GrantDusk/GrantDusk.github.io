@@ -19,7 +19,7 @@ h1.programhead	{
 }
 body {
   padding-top: 3.5rem;
-  background-color:grey;
+  background-color: grey;
 }
 
 p.scratchbold	{
@@ -39,6 +39,7 @@ p.programbold	{
 	font-size: 25px;
 	margin-bottom: 150px;
 	text-shadow: 1px 1px  black;
+}
 div.jumbotron	{
 	background-image: url("https://www.acurax.com/wp-content/themes/acuraxsite/images/inner_page_bnr.jpg?x21789")
 }
