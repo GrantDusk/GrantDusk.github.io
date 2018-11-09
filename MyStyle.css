@@ -7,17 +7,38 @@ Head_Big	{
 	z-index: 0;	
 }
 
-h1.pad	{
+h1.scratchhead	{
 	color: #FF9900;
 	padding: 20px 20px 20px 20px;
-	text-shadow: 1px 1px  white;
+	text-shadow: 1px 1px  black;
+}
+h1.programhead	{
+	color:#FFC500;
+	padding: 20px 20px 20px 20px;
+	text-shadow: 1px 1px  black;
 }
 body {
   padding-top: 3.5rem;
   background-color:grey;
 }
 
-
+p.scratchbold	{
+	padding-top: 170px;
+	font-family: "Lucida Console", Monaco, monospace;
+	color: white;
+	text-align:center;
+	font-size: 25px;
+	margin-bottom: 300px;
+	text-shadow: 1px 1px  black;
+}
+p.programbold	{
+	padding-top: 85px;
+	font-family: "Lucida Console", Monaco, monospace;
+	color: white;
+	text-align:center;
+	font-size: 25px;
+	margin-bottom: 150px;
+	text-shadow: 1px 1px  black;
 div.jumbotron	{
 	background-image: url("https://www.acurax.com/wp-content/themes/acuraxsite/images/inner_page_bnr.jpg?x21789")
 }
@@ -69,6 +90,8 @@ div.jumbotron	{
   border-color: #FF9900;
   color: black;
   background-color: #ffd394;
+  margin-top: 30px;
+  margin-bottom:50px
 }
 .scratch:hover	{
   background-color: #FF9900;
@@ -80,6 +103,7 @@ div.jumbotron	{
   border-color: #FFC500;
   color: black;
   background-color: #FFFFad;
+  margin-top: 30px;
 }
 .programs:hover	{
   background-color:  #FFC500;
@@ -90,6 +114,7 @@ div.jumbotron	{
   border-color: #1387FF;
   color: black;
   background-color: #add8e6;
+   margin-top: 30px;
 }
 .questions:hover	{
   background-color: #1387FF;
