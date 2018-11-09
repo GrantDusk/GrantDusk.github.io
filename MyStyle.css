@@ -7,21 +7,92 @@ Head_Big	{
 	z-index: 0;	
 }
 
+h1.pad	{
+	color: #FF9900;
+	padding: 20px 20px 20px 20px;
+	text-shadow: 1px 1px  white;
+}
 body {
   padding-top: 3.5rem;
+  background-color:grey;
 }
 
 
 div.jumbotron	{
-	background-image: url("https://wallpapercave.com/wp/rtMojAI.jpg");
-	background-size: fill;
-	
+	background-image: url("https://www.acurax.com/wp-content/themes/acuraxsite/images/inner_page_bnr.jpg?x21789")
+}
+/* Containers for descriptions */ 
+
+.boxscratch	{
+	margin-top: 10px;
+	border: 4px solid black;
+	border-color: #FF9900;
+	color: black;
+	background-color: white;
+	text-align: center;
+	padding: 20px 20px 20px 20px;
 }
 
-div.blue	{
-	width: 100%;
-	height: 100%;
-	background-image: url("http://stephenking.club/wp-content/uploads//2018/05/solid-blue-color-light-sky-blue-solid-color-background-miaminx-navy-blue-colored-solid-skater-dress.jpg");
-	padding: 0px 0px 0px 0px;
-	
+.boxprograms	{
+	margin-top: 10px;
+	border: 4px solid black;
+	border-color: #FFC500;
+	color: black;
+	background-color: white;
+	text-align: center;
+	padding: 20px 20px 20px 20px;
 }
+
+.boxquestions	{
+	margin-top: 10px;
+	border: 4px solid black;
+	border-color: #1387FF;
+	color: black;
+	background-color: white;
+	text-align: center;
+	padding: 20px 20px 20px 20px;
+}
+/* Home page Buttons */
+
+.btn {
+  border: 4px solid black;
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.scratch {
+  
+  border-color: #FF9900;
+  color: black;
+  background-color: #ffd394;
+}
+.scratch:hover	{
+  background-color: #FF9900;
+  color: white;
+  border: 4px solid white;
+}	
+
+.programs {
+  border-color: #FFC500;
+  color: black;
+  background-color: #FFFFad;
+}
+.programs:hover	{
+  background-color:  #FFC500;
+  color: white;
+  border: 4px solid white;
+}	
+.questions {
+  border-color: #1387FF;
+  color: black;
+  background-color: #add8e6;
+}
+.questions:hover	{
+  background-color: #1387FF;
+  color: white;
+  border: 4px solid white;
+}	
