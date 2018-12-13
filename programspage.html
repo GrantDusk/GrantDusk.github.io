@@ -1,7 +1,7 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -13,201 +13,245 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="MyStyle.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
+<body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Grant Duskin</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">Grant Duskin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/GrantDusk/GrantDusk.github.io">My Github</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="https://imgur.com/gallery/lqKlotB">Meme</a>
-          </li>
-		  <li class="nav-item">
-            <a class="nav-link disabled" href="https://docs.google.com/document/d/15SCowJPKKqqmkp_a2bP6kPjj_8pUvumfYBw22P632kE/edit">Midterm Report</a>
-          </li>
-          <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Certification</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-			<a class="dropdown-item" href="https://www.screencast.com/t/E4e1HQTLqEuV">CodeCombat</a>
-            <a class="dropdown-item" href="https://docs.google.com/document/d/1TqtkTrbxosN9RD2x8UYXSPSOhqKDJILZRrwuPAUCLXA/edit?usp=sharing">Code HS</a>
+        <!--nav bar-->
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/GrantDusk/GrantDusk.github.io">My Github</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Certification</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="https://www.screencast.com/t/E4e1HQTLqEuV">CodeCombat</a>
+                        <a class="dropdown-item" href="https://docs.google.com/document/d/1TqtkTrbxosN9RD2x8UYXSPSOhqKDJILZRrwuPAUCLXA/edit?usp=sharing">Code HS</a>
+                        <a class="dropdown-item" href="https://www.screencast.com/t/dGTpEmWo">CodeAcademy</a>
+                        <a class="dropdown-item" href="https://www.screencast.com/t/tLtbPjNKZxj">CS Circles</a>
+                        <a class="dropdown-item" href="https://www.screencast.com/t/cNe1Xr9F">FreeCodeCamp</a>
+                    </div>
+                </li>
+            </ul>
+            <!--Drop down Nav Menu Top Right-->
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div class="navdrop programsnav" a href="#programs">Programs</div>
+                <a href="#rps">Rock, Paper, Scissors</a>
+                <a href="#mastermind">Mastermind</a>
+                <a href="#hangman">Hangman</a>
+                <div class="navdrop programsnav">Javascript</div>
+                <a href="#f21">Figure 2-1</a>
+                <a href="#f22">Figure 2-2</a>
+                <a href="#sunset">Sunset</a>
+                <div class="navdrop programsnav" href="#calc">Calculator</div>
+                <a href="#base">Base Converter</a>
+                <a href="#robot">Robot Treasure Hunt</a>
+                <a href="#mileage">Mileage</a>
+                <a href="#snow">Snow Tires</a>
+                <a href="#loan">Loan</a>
+                <a href="#greatest">Greatest</a>
+                <a href="#average">Average</a>
+                <div class="navdrop programsnav" href="#app">App Creator</div>
+                <a href="#golf">Golf Game</a>
             </div>
-          </li>
-        </ul>
-        
-      </div>
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
     </nav>
-
+    <!--main body-->
     <main role="main">
-<div class="container-fluid">
-  <h1 class="programhead">Programs:</h1>
-	<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">Rock, Paper, Scissors</p>
-		</div>
-		<div class="col-md-4">
-			<iframe src="https://pastebin.com/embed_iframe/JHBEkbdc" style="border:none;width:100%;height:200px"></iframe>
-		</div>
-		<div class="col-md-4">
-			<a href="https://www.screencast.com/t/xcJ1ll62nuFr"><button class="btn video">Click for Video Demo!</button></a>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">Mastermind</p>
-		</div>
-		<div class="col-md-4">
-			<iframe src="https://pastebin.com/embed_iframe/2VfzdK7K" style="border:none;width:100%;height:200px"></iframe>
-		</div>
-		<div class="col-md-4">
-			<a href="https://www.screencast.com/t/G4GlVF1xGlaP"><button class="btn video">Click for Video Demo!</button></a>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">Hangman</p>
-		</div>
-		<div class="col-md-4">
-			<iframe src="https://pastebin.com/embed_iframe/C9tmvCyp" style="border:none;width:100%;height:200px"></iframe>
+        <!--sticky note-->
+        <div class="arrow"><img src="arrow.png" alt="Try the easy navigation!" width="50" height="40"></div>
+        <div class="arrowbox"><strong>Easy Navigation!</strong></div>
+        <div class="container-fluid">
+            <h1 class="programhead" id="programs">Programs:</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="rps">Rock, Paper, Scissors</p>
+                </div>
+                <div class="col-md-4">
+                    <iframe src="https://pastebin.com/embed_iframe/JHBEkbdc" style="border:none;width:100%;height:200px"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.screencast.com/t/xcJ1ll62nuFr"><button class="btn video">Click for Video Demo!</button></a>
+                </div>
+            </div>
 
-		</div>
-		<div class="col-md-4">
-			<a href="https://www.screencast.com/t/fIhhBfVJRB"><button class="btn video">Click for Video Demo!</button></a>
-		</div>
-	</div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="mastermind">Mastermind</p>
+                </div>
+                <div class="col-md-4">
+                    <iframe src="https://pastebin.com/embed_iframe/2VfzdK7K" style="border:none;width:100%;height:200px"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.screencast.com/t/G4GlVF1xGlaP"><button class="btn video">Click for Video Demo!</button></a>
+                </div>
+            </div>
 
-	
-	<h1 class="head1">JavaScript</h1>
-	<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">JS: Figure 2-1:</p>
-		</div>
-		<div class="col-md-8">
-			<a href="js2-1.html"><button class="btn java">click here!</button></a>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">JS: Figure 2-2:</p>
-		</div>
-		<div class="col-md-8">
-			<a href="js2-2.html"><button class="btn java">click here!</button></a>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">JS: Personal Sunset Idea:</p>
-		</div>
-		<div class="col-md-8">
-			<a href="jsss.html"><button class="btn java">click here!</button></a>
-		</div>
-	</div>
-	<h1 class="head1">Calculator</h1>
-		<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">Base 10 Converter</p>
-		</div>
-		<div class="col-md-8">
-			<iframe src="https://pastebin.com/embed_iframe/y33ST6kM" style="border:none;width:100%;height:200px;"></iframe>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">Robot Treasure Hunt</p>
-		</div>
-		<div class="col-md-4">
-			<iframe src="https://pastebin.com/embed_iframe/wmTQrvtt" style="border:none;width:100%; height:200px;"></iframe>
-		</div>
-		<div class="col-md-4">
-			<a href="https://www.screencast.com/t/kYNdJH2RyBhr"><button class="btn video">Click for Video Demo!</button></a>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">Calculator: Mileage</p>
-		</div>
-		<div class="col-md-8">
-			<iframe src="https://pastebin.com/embed_iframe/fFShQRtg" style="border:none;width:100%;height:200px;"></iframe>
-		</div>
-	</div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="hangman">Hangman</p>
+                </div>
+                <div class="col-md-4">
+                    <iframe src="https://pastebin.com/embed_iframe/C9tmvCyp" style="border:none;width:100%;height:200px"></iframe>
 
-	<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">Calculator: Snow Tires</p>
-		</div>
-		<div class="col-md-8">
-			<iframe src="https://pastebin.com/embed_iframe/6rTxLpyJ" style="border:none;width:100%;height:200px;"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.screencast.com/t/fIhhBfVJRB"><button class="btn video">Click for Video Demo!</button></a>
+                </div>
+            </div>
 
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">Calculator: Loan</p>
-		</div>
-		<div class="col-md-8">
-			<iframe src="https://pastebin.com/embed_iframe/9ECEHkVt" style="border:none;width:100%;height:200px"></iframe>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">Calculator: Greatest</p>
-		</div>
-		<div class="col-md-8">
-			<iframe src="https://pastebin.com/embed_iframe/NZtsc7s1" style="border:none;width:100%;height:200px"></iframe>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">Calculator: Average</p>
-		</div>
-		<div class="col-md-8">
-			<iframe src="https://pastebin.com/embed_iframe/7KdWFaVV" style="border:none;width:100%;height:200px;"></iframe>
 
-		</div>
-	</div>
-	
-	<h1 class="head1">App Creator</h1>
-	<div class="row">
-		<div class="col-md-4">
-			<p class="programbold">Golf Game</p>
-		</div>
-		<div class="col-md-8">
-			<a href="https://drive.google.com/file/d/1EamRaJXNyc076ZjaxC02_cE32PN39v5r/view"><button class="btn java">click here!</button></a>
-		</div>
-	</div>
-	
-</div>
-    </main>
+            <h1 class="head1" id="#java">JavaScript</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="f21">JS: Figure 2-1:</p>
+                </div>
+                <div class="col-md-8">
+                    <a href="js2-1.html"><button class="btn java">click here!</button></a>
+                </div>
+            </div>
 
-    <footer class="container">
-      <p>&copy; Grant D. 2018-2019 </p>
-    </footer>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="f22">JS: Figure 2-2:</p>
+                </div>
+                <div class="col-md-8">
+                    <a href="js2-2.html"><button class="btn java">click here!</button></a>
+                </div>
+            </div>
 
-    <!-- Bootstrap core JavaScript
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="sunset">JS: Personal Sunset Idea:</p>
+                </div>
+                <div class="col-md-8">
+                    <a href="jsss.html"><button class="btn java">click here!</button></a>
+                </div>
+            </div>
+            <h1 class="head1" id="#calc">Calculator</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="base">Base 10 Converter</p>
+                </div>
+                <div class="col-md-4">
+                    <iframe src="https://pastebin.com/embed_iframe/9ZLpyxrj" style="border:none;width:100%;height:200px;"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.screencast.com/t/ioDs3dvYhU"><button class="btn video">Click for Video Demo!</button></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="robot">Robot Treasure Hunt</p>
+                </div>
+                <div class="col-md-4">
+                    <iframe src="https://pastebin.com/embed_iframe/wmTQrvtt" style="border:none;width:100%; height:200px;"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.screencast.com/t/kYNdJH2RyBhr"><button class="btn video">Click for Video Demo!</button></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="mileage">Calculator: Mileage</p>
+                </div>
+                <div class="col-md-4">
+                    <iframe src="https://pastebin.com/embed_iframe/QnYsGuQN" style="border:none;width:100%;height:200px;"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.screencast.com/t/qV8sIcqqV"><button class="btn video">Click for Video Demo!</button></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="snow">Calculator: Snow Tires</p>
+                </div>
+                <div class="col-md-4">
+                    <iframe src="https://pastebin.com/embed_iframe/zUQPmdBQ" style="border:none;width:100%;height:200px;"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.screencast.com/t/iDjd5jql0Nb8"><button class="btn video">Click for Video Demo!</button></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="loan">Calculator: Loan</p>
+                </div>
+                <div class="col-md-4">
+                    <iframe src="https://pastebin.com/embed_iframe/EAMSce99" style="border:none;width:100%;height:200px"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.screencast.com/t/NiUEm86y7"><button class="btn video">Click for Video Demo!</button></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="greatest">Calculator: Greatest</p>
+                </div>
+                <div class="col-md-4">
+                    <iframe src="https://pastebin.com/embed_iframe/4YnVZt7v" style="border:none;width:100%;height:200px"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.screencast.com/t/ILVNbnjcrlcr"><button class="btn video">Click for Video Demo!</button></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="average">Calculator: Average</p>
+                </div>
+                <div class="col-md-4">
+                    <iframe src="https://pastebin.com/embed_iframe/QX7WFHjj" style="border:none;width:100%;height:200px;"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.screencast.com/t/44rkN9pRa4d"><button class="btn video">Click for Video Demo!</button></a>
+                </div>
+            </div>
+
+            <h1 class="head1" id="app">App Creator</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="programbold" id="golf">Golf Game</p>
+                </div>
+                <div class="col-md-8">
+                    <a href="https://drive.google.com/file/d/1EamRaJXNyc076ZjaxC02_cE32PN39v5r/view"><button class="btn java">click here!</button></a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script>
+            function openNav() {
+              document.getElementById("mySidepanel").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+</body>
+
 </html>
