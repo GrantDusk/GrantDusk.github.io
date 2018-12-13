@@ -3,10 +3,11 @@ Head_Big	{
 	font-family: 'Acme', sans-serif;
 	font-size: 40;
 	font-style: bold;
-	font-color: white;
+	color: white;
 	z-index: 0;	
 }
 
+/*page headings*/
 h1.scratchhead	{
 	color: #FF9900;
 	padding: 20px 20px 20px 20px;
@@ -37,7 +38,7 @@ p.link	{
 	padding-top: 70px;
 	font-size: 40px;
 }
-
+/*page headings*/
 p.scratchbold	{
 	padding-top: 170px;
 	font-family: "Lucida Console", Monaco, monospace;
@@ -56,6 +57,16 @@ p.programbold	{
 	margin-bottom: 150px;
 	text-shadow: 2px 2px  black;
 }
+p.questionsbold	{
+	padding-top: 85px;
+	font-family: "Lucida Console", Monaco, monospace;
+	color: white;
+	text-align:center;
+	font-size: 25px;
+	margin-bottom: 125px;
+	text-shadow: 2px 2px  black;
+}
+
 div.jumbotron	{
 	background-image: url("https://www.acurax.com/wp-content/themes/acuraxsite/images/inner_page_bnr.jpg?x21789");
 }
@@ -105,6 +116,13 @@ div.jumbotron	{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+footer	{
+	position: relative;
+		left: 0px;
+		bottom: 0px;
+	padding-left: 20px;
+	
+}
 /* Buttons */
 
 .btn {
@@ -170,7 +188,119 @@ div.jumbotron	{
 .doc	{
 	background-color:aqua;
 	color: black;
-	margin-top: 155px;
+	margin-top: 75px;
 	padding: 15px 24px;
 	border-radius:4px;
 	margin-left: 200px;
+}
+
+
+
+
+/*Self Evaluation Color Below!*/
+
+a.eval {
+	color:white;
+	text-shadow: none;
+}
+
+a.eval:hover	{
+	text-decoration: underline;
+}
+
+
+/*"Easy Navigation"*/
+.arrow	{
+	position: absolute;
+	right: 90px;
+	top: 70px;
+}
+
+.arrowbox	{
+	position: absolute;
+	right: 60px;
+	top: 100px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	color: white;
+}
+
+
+/* All following is for Nav Drop Down*/
+.navdrop {
+	font-size: 20px;
+ 	transition: 0.3s;
+    padding: 8px 8px 8px 20px;
+}
+
+.programsnav	{
+	color:#FFC500;
+}
+
+.scratchnav	{
+	color: #FF9900;
+}
+
+.questionsnav	{
+	color: #1387FF;
+}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: relative;
+  top: 0px;
+  right: 0px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 42px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  position: fixed;
+  right: 0px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #343a40;
+  color: white;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border: none;
+  right: 0px;
+}
+
+.openbtn:hover {
+  background-color:grey;
+}
+.evaluation	{
+	text-align: center;
+	font-size: 20px;
+	font-family: "Lucida Console", Monaco, monospace;
+	color: lime;
+	text-shadow: 2px 2px black;
+	margin-top:100px;
+}
