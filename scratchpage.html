@@ -1,7 +1,7 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -13,74 +13,83 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="MyStyle.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
+<body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Grant Duskin</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">Grant Duskin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-           <a class="nav-link" href="https://grantdusk.github.io/">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/GrantDusk/GrantDusk.github.io">My Github</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="https://imgur.com/gallery/lqKlotB">Meme</a>
-          </li>
-		  <li class="nav-item">
-            <a class="nav-link disabled" href="https://docs.google.com/document/d/15SCowJPKKqqmkp_a2bP6kPjj_8pUvumfYBw22P632kE/edit">Midterm Report</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Certification</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-			<a class="dropdown-item" href="https://www.screencast.com/t/E4e1HQTLqEuV">CodeCombat</a>
-            <a class="dropdown-item" href="https://docs.google.com/document/d/1TqtkTrbxosN9RD2x8UYXSPSOhqKDJILZRrwuPAUCLXA/edit?usp=sharing">Code HS</a>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/GrantDusk/GrantDusk.github.io">My Github</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Certification</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="https://www.screencast.com/t/E4e1HQTLqEuV">CodeCombat</a>
+                        <a class="dropdown-item" href="https://docs.google.com/document/d/1TqtkTrbxosN9RD2x8UYXSPSOhqKDJILZRrwuPAUCLXA/edit?usp=sharing">Code HS</a>
+                        <a class="dropdown-item" href="https://www.screencast.com/t/dGTpEmWo">CodeAcademy</a>
+                        <a class="dropdown-item" href="https://www.screencast.com/t/tLtbPjNKZxj">CS Circles</a>
+                        <a class="dropdown-item" href="https://www.screencast.com/t/cNe1Xr9F">FreeCodeCamp</a>
+                    </div>
+                </li>
+            </ul>
+            <!--Drop down Nav Menu Top Right-->
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div class="navdrop scratchnav" a href="#">Scratch Projects</div>
+                <a href="#spooky">Halloween Game</a>
+                <a href="#ball">Ball Game</a>
+                <a href="#traverse">Traverse</a>
             </div>
-          </li>
-        </ul>
-      </div>
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
     </nav>
-
+    <!--main body-->
+    <!--sticky note-->
+    <div class="arrow"><img src="arrow.png" alt="Try the easy navigation!" width="50" height="40"></div>
+    <div class="arrowbox"><strong>Easy Navigation!</strong></div>
     <main role="main">
-<div class="container-fluid">
-  <h1 class="scratchhead">Scratch Projects:</h1>
-  <div class="row">
-    <div class="col-md-4">
-      <p class="scratchbold">Spooky Halloween Game</p>
-    </div>
-    <div class="col-md-8">
-      <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/250836246/?autostart=false" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4">
-      <p class="scratchbold">Ball Game</p>
-    </div>
-    <div class="col-md-8">
-         <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/248171255/?autostart=false" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4">
-      <p class="scratchbold">Traverse</p>
-    </div>
-    <div class="col-md-8">
-           <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/259006208/?autostart=false" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
+        <div class="container-fluid">
+            <h1 class="scratchhead">Scratch Projects:</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="scratchbold" id="spooky">Spooky Halloween Game</p>
+                </div>
+                <div class="col-md-8">
+                    <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/250836246/?autostart=false" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="scratchbold" id="ball">Ball Game</p>
+                </div>
+                <div class="col-md-8">
+                    <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/248171255/?autostart=false" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="scratchbold" id="traverse">Traverse</p>
+                </div>
+                <div class="col-md-8">
+                    <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/259006208/?autostart=false" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
 
     </main>
 
-    <footer class="container">
-      <p>&copy; Grant D. 2018-2019 </p>
+    <footer>
+        <p>© Grant D. 2018-2019 </p>
     </footer>
 
     <!-- Bootstrap core JavaScript
@@ -89,5 +98,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+</body>
+
 </html>
